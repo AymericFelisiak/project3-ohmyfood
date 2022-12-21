@@ -1,0 +1,33 @@
+:root {
+    --logo-font: 'Shrikhand';
+    --text-font: 'Roboto', sans-serif;
+}
+
+.site-title {
+    font-family: var(--logo-font);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.position-text {
+    font-family: var(--text-font);
+    font-size: 14px;
+    font-weight: 700;
+    color: #353535;
+}
+
+.section-title {
+    font-family: var(--text-font);
+    font-weight: bold;
+}
+
+.section-subtitle {
+    font-family: var(--text-font);
+}
+
+.steplist-text {
+    font-family: var(--text-font);
+    font-size: 14px;
+    font-weight: 700;
+}
