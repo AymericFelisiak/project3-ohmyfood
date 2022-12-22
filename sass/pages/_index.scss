@@ -66,14 +66,18 @@
                     margin: 0;
                 }
             }
-        }
-        .steplist:hover {
-            background-color: $transparent-amethyst;
 
-            .fa-solid {
-                color: $amethyst;
+            &:hover {
+                .steplist:hover {
+                    background-color: $transparent-amethyst;
+        
+                    .fa-solid {
+                        color: $amethyst;
+                    }
+                }
             }
         }
+        
     }
 
     .restaurants-wrapper {
