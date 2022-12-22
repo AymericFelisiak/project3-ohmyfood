@@ -149,8 +149,18 @@
   align-items: baseline;
   justify-content: space-between;
 }
-.main-wrapper .restaurants-wrapper .main-card-wrapper .main-card .main-card-informations-wrapper .fa-regular.fa-heart:hover {
+.main-wrapper .restaurants-wrapper .main-card-wrapper .main-card .main-card-informations-wrapper .heart-icons-container {
+  display: flex;
+}
+.main-wrapper .restaurants-wrapper .main-card-wrapper .main-card .main-card-informations-wrapper .heart-icons-container .fa-solid.fa-heart {
+  display: none;
+}
+.main-wrapper .restaurants-wrapper .main-card-wrapper .main-card .main-card-informations-wrapper .heart-icons-container:hover .fa-solid.fa-heart {
+  display: flex;
   color: #9356DC;
+}
+.main-wrapper .restaurants-wrapper .main-card-wrapper .main-card .main-card-informations-wrapper .heart-icons-container:hover .fa-regular.fa-heart {
+  display: none;
 }
 
 html {

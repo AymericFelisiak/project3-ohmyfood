@@ -68,16 +68,13 @@
             }
 
             &:hover {
-                .steplist:hover {
-                    background-color: $transparent-amethyst;
+                background-color: $transparent-amethyst;
         
-                    .fa-solid {
-                        color: $amethyst;
-                    }
+                .fa-solid {
+                    color: $amethyst;
                 }
             }
         }
-        
     }
 
     .restaurants-wrapper {
@@ -107,9 +104,30 @@
                     .main-card-titles-wrapper {
 
                     }
-                    .fa-regular.fa-heart:hover {
-                        color: $amethyst;
+
+                    .heart-icons-container {
+                        display: flex;
+
+                        .fa-solid.fa-heart {
+                            display: none;
+                        }
+
+                        &:hover {
+
+                            .fa-solid.fa-heart {
+                                display: flex;
+                                color: $amethyst;
+                            }
+
+                            .fa-regular.fa-heart {
+                                display: none;
+                            }
+                        }
                     }
+
+                    
+
+                    
                 }
             }
         }
