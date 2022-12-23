@@ -6,13 +6,13 @@
 
     .site-title {
         color: white;
+        font-size: 20px;
     }
 
     .footer-link {
         @include flex-row();
-        margin-left: 20px;
         align-items: center;
-        column-gap: 20px;
+        column-gap: 10px;
         width: fit-content;
         text-decoration: none;
         color: white;

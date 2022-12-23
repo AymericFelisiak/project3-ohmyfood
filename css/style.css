@@ -1,35 +1,35 @@
-:root {
-  --logo-font: "Shrikhand";
-  --text-font: "Roboto", sans-serif;
-}
-
 .site-title {
-  font-family: var(--logo-font);
+  font-family: "Shrikhand";
   font-size: 24px;
   font-weight: 400;
   line-height: 15px;
 }
 
 .position-text {
-  font-family: var(--text-font);
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 700;
   color: #353535;
 }
 
 .section-title {
-  font-family: var(--text-font);
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 
 .section-subtitle {
-  font-family: var(--text-font);
+  font-family: "Roboto", sans-serif;
 }
 
 .steplist-text {
-  font-family: var(--text-font);
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 700;
+}
+
+.footer-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
 
 .button {
@@ -55,6 +55,7 @@
 .header-wrapper .site-title-wrapper {
   cursor: pointer;
   text-decoration: none;
+  color: black;
 }
 .header-wrapper .site-title-wrapper:visited {
   color: black;
@@ -68,12 +69,12 @@
 }
 .footer-wrapper .site-title {
   color: white;
+  font-size: 20px;
 }
 .footer-wrapper .footer-link {
   display: flex;
-  margin-left: 20px;
   align-items: center;
-  column-gap: 20px;
+  column-gap: 10px;
   width: fit-content;
   text-decoration: none;
   color: white;

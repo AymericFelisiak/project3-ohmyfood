@@ -1,33 +1,36 @@
-:root {
-    --logo-font: 'Shrikhand';
-    --text-font: 'Roboto', sans-serif;
-}
+$title-font: 'Shrikhand';
+$primary-font: 'Roboto', sans-serif;
 
 .site-title {
-    font-family: var(--logo-font);
+    font-family: $title-font;
     font-size: 24px;
     font-weight: 400;
     line-height: 15px;
 }
 
 .position-text {
-    font-family: var(--text-font);
+    font-family: $primary-font;
     font-size: 14px;
     font-weight: 700;
     color: #353535;
 }
 
 .section-title {
-    font-family: var(--text-font);
+    font-family: $primary-font;
     font-weight: bold;
 }
 
 .section-subtitle {
-    font-family: var(--text-font);
+    font-family: $primary-font;
 }
 
 .steplist-text {
-    font-family: var(--text-font);
+    font-family: $primary-font;
     font-size: 14px;
     font-weight: 700;
+}
+
+.footer-text {
+    font-family: $primary-font;
+    font-size: 14px;
 }
