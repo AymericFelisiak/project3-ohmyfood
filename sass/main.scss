@@ -1,9 +1,19 @@
-@import "utils/variables";
+// Base
 @import "base/typography";
+
+// Utils
+@import "utils/colors";
 @import "utils/mixins";
+
+// Components
+@import "components/font-awesome-mod";
 @import "components/buttons";
+
+// Layouts
 @import "layouts/header";
 @import "layouts/footer";
+
+// Pages
 @import "pages/index";
 
 html {
