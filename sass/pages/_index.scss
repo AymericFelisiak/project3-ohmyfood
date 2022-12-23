@@ -34,50 +34,59 @@
         }
     }
 
-    .steplist-wrapper {
+    .fonctionnement-wrapper {
         margin-top: 40px;
         padding-left: 20px;
         padding-right: 20px;
         margin-bottom: 40px;
-        
-        .steplist {
-            @include flex-row();
-            @include boxshadow();
-            @include card-border-radius();
-            background-color: $white-smoke;
-            overflow: visible;
-            max-width: 330px;
-            height: 70px;
-            background-color: $white-smoke;
+
+        .steplist-wrapper {
+            @include flex-column();
             align-items: center;
-            column-gap: 20px;
-            margin-bottom: 20px;
+            justify-content: center;
+            align-content: center;
 
-            .circle {
-                display: flex;
-                justify-content: center;
+            .steplist {
+                @include flex-row();
+                @include boxshadow();
+                @include card-border-radius();
+                background-color: $white-smoke;
+                overflow: visible;
+                width: 100%;
+                max-width: 330px;
+                height: 70px;
+                background-color: $white-smoke;
                 align-items: center;
-                background-color: $amethyst;
-                border-radius: 50%;
-                width: 20px;
-                height: 20px;
-                margin-left: -10px;
-
-                .step-number {
-                    font-family: var(--text-font);
-                    font-size: 12px;
-                    color: white;
-                    margin: 0;
+                column-gap: 20px;
+                margin-bottom: 20px;
+    
+                .circle {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $amethyst;
+                    border-radius: 50%;
+                    width: 20px;
+                    height: 20px;
+                    margin-left: -10px;
+    
+                    .step-number {
+                        font-family: var(--text-font);
+                        font-size: 12px;
+                        color: white;
+                        margin: 0;
+                    }
+                }
+    
+                &:hover {
+                    background-color: $transparent-amethyst;
+            
+                    .fa-solid {
+                        color: $amethyst;
+                    }
                 }
             }
 
-            &:hover {
-                background-color: $transparent-amethyst;
-        
-                .fa-solid {
-                    color: $amethyst;
-                }
-            }
         }
     }
 
