@@ -32,10 +32,32 @@
   font-weight: 700;
 }
 
+.button {
+  border-radius: 20px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border: 0;
+}
+.button .steplist-text {
+  color: white;
+}
+.button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 .header-wrapper {
   display: flex;
+  position: relative;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.25);
   align-items: center;
   justify-content: center;
+}
+.header-wrapper .site-title-wrapper {
+  cursor: pointer;
+  text-decoration: none;
+}
+.header-wrapper .site-title-wrapper:visited {
+  color: black;
 }
 
 .footer-wrapper {
@@ -94,8 +116,12 @@
 }
 .main-wrapper .steplist-wrapper .steplist {
   display: flex;
+  box-shadow: 4px 4px 22px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  background-color: #F7F7F7;
   overflow: visible;
   max-width: 330px;
+  height: 70px;
   background-color: #F7F7F7;
   align-items: center;
   column-gap: 20px;
@@ -136,11 +162,22 @@
   row-gap: 15px;
 }
 .main-wrapper .restaurants-wrapper .main-card-wrapper .main-card {
-  border: 1px solid black;
+  box-shadow: 4px 4px 22px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+}
+.main-wrapper .restaurants-wrapper .main-card-wrapper .main-card:visited {
+  color: black;
 }
 .main-wrapper .restaurants-wrapper .main-card-wrapper .main-card .main-card-image-wrapper {
-  width: 100%;
+  display: flex;
+  height: 200px;
+}
+.main-wrapper .restaurants-wrapper .main-card-wrapper .main-card .main-card-image-wrapper .restaurant-image {
   object-fit: cover;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
 }
 .main-wrapper .restaurants-wrapper .main-card-wrapper .main-card .main-card-informations-wrapper {
   display: flex;
