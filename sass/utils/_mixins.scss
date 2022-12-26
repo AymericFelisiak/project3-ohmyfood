@@ -12,9 +12,15 @@
 }
 
 @mixin card-border-radius() {
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 @mixin border-top() {
     border-radius: 20px 20px 0px 0px;
+}
+
+@mixin text-overflow-ellipsis() {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }

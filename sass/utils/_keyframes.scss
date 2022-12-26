@@ -9,3 +9,30 @@
         transform: translateY(0);
     }
 }
+
+@keyframes slide-in-tick {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-50px);
+    }
+}
+
+@keyframes slide-price {
+    0% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes tick-rotation {
+    0% {
+        rotate: 180deg;
+    }
+    100% {
+        rotate: 0deg;
+    }
+}
