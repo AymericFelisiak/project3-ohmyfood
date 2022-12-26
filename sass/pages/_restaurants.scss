@@ -37,9 +37,19 @@
                         @include flex-row();
                         @include boxshadow();
                         @include card-border-radius();
+                        opacity: 0;
                         padding-left: 20px;
                         padding-right: 20px;
                         justify-content: space-between;
+                        animation: card-fade-in 2s forwards;
+
+                        &:nth-child(2) {
+                            animation-delay: 100ms;
+                        }
+
+                        &:nth-child(3) {
+                            animation-delay: 200ms;
+                        }
 
                         &:hover {
 

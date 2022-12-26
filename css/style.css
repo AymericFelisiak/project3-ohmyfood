@@ -41,6 +41,16 @@
   margin-block-end: 10px;
 }
 
+@keyframes card-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .fa-solid.fa-mobile-screen-button, .fa-solid.fa-list, .fa-solid.fa-store {
   color: grey;
 }
@@ -119,6 +129,7 @@
   padding-right: 20px;
   padding-left: 20px;
   padding-top: 10px;
+  padding-bottom: 20px;
 }
 .footer-wrapper .site-title {
   color: white;
@@ -313,9 +324,17 @@
   display: flex;
   box-shadow: 4px 4px 22px -5px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
+  opacity: 0;
   padding-left: 20px;
   padding-right: 20px;
   justify-content: space-between;
+  animation: card-fade-in 2s forwards;
+}
+.main-wrapper .restaurant-menu-wrapper .menu-wrapper .submenu-wrapper .menu-card-wrapper .menu-card:nth-child(2) {
+  animation-delay: 100ms;
+}
+.main-wrapper .restaurant-menu-wrapper .menu-wrapper .submenu-wrapper .menu-card-wrapper .menu-card:nth-child(3) {
+  animation-delay: 200ms;
 }
 .main-wrapper .restaurant-menu-wrapper .menu-wrapper .submenu-wrapper .menu-card-wrapper .menu-card .menu-card-informations {
   display: flex;
