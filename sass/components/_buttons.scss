@@ -1,5 +1,5 @@
 .button {
-    @include card-border-radius;
+    @include button-borders();
     background: linear-gradient(to bottom right, $pale-magenta, $amethyst);
     border: 0;
     

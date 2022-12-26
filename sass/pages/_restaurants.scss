@@ -2,7 +2,6 @@
 
     .restaurant-image-wrapper {
         display: flex;
-        height: 200px;
 
         .restaurant-background-image {
             object-fit: cover;
@@ -12,14 +11,46 @@
 
     .restaurant-menu-wrapper {
         @include flex-column();
-        @include border-top();
+        background-color: white;
+        border-radius: 40px 40px 0px 0px;
+        z-index: 1;
+        position: relative;
+        top: -40px;
         padding-left: 20px;
         padding-right: 20px;
+
+        .restaurant-menu-top-wrapper {
+            @include flex-row();
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+
+            .heart-icons-container {
+                display: flex;
+                margin-right: 20px;
+
+                .fa-solid.fa-heart {
+                    display: none;
+                }
+
+                &:hover {
+
+                    .fa-solid.fa-heart {
+                        display: flex;
+                        color: $amethyst;
+                    }
+
+                    .fa-regular.fa-heart {
+                        display: none;
+                    }
+                }
+            }
+
+        }
 
         .menu-wrapper {
             
             .submenu-wrapper {
-
                 margin-bottom: 40px;
                 & > .section-subtitle {
                     width: 40px;

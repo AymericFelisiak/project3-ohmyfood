@@ -1,10 +1,10 @@
 // Base
 @import "base/typography";
 
-// Utils
-@import "utils/colors";
-@import "utils/mixins";
-@import "utils/keyframes";
+// Abstracts
+@import "abstracts/colors";
+@import "abstracts/mixins";
+@import "abstracts/animations";
 
 // Components
 @import "components/font-awesome-mod";
