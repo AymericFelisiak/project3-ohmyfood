@@ -12,18 +12,23 @@
 </head>
 <body>
     <header class="header-wrapper">
-        <a href="index.html" class="site-title-wrapper">
-            <h1 class="site-title">ohmyfood</h1>
-        </a>
+        <div class="arrow-title-wrapper">
+            <a href="index.html" class="arrow-wrapper">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <a href="index.html" class="title-wrapper">
+                <h1 class="site-title">ohmyfood</h1>
+            </a>
+        </div>
     </header>
     <main class="main-wrapper">
         <div class="restaurant-image-wrapper">
-            <img src="">
+            <img class="restaurant-background-image" src="images\restaurants-backgrounds\toa-heftiba-DQKerTsQwi0-unsplash.jpg">
         </div>
         <section class="restaurant-menu-wrapper">
             <h2 class="site-title">À la française</h2>
             <div class="menu-wrapper">
-                <div class="sub-menu-wrapper">
+                <div class="submenu-wrapper">
                     <h3 class="section-subtitle">ENTREES</h3>
                     <div class="menu-card-wrapper">
                         <div class="menu-card">
@@ -31,7 +36,9 @@
                                 <h2 class="section-title">Tartare de poulpe acidulé</h2>
                                 <p class="section-subtitle">Aux zestes d'orange</p>
                             </div>
-                            <div class="menu-card-price">25€</div>
+                            <div class="menu-card-price-wrapper">
+                                <div class="menu-card-price">25€</div>
+                            </div>
                             <div class="animated-tick"></div>
                         </div>
                         <div class="menu-card">
@@ -39,7 +46,9 @@
                                 <h2 class="section-title">Velouté de légumes d'antan</h2>
                                 <p class="section-subtitle">Carotte, panais, topinambour</p>
                             </div>
-                            <div class="menu-card-price">35€</div>
+                            <div class="menu-card-price-wrapper">
+                                <p class="menu-card-price">35€</p>
+                            </div>
                             <div class="animated-tick"></div>
                         </div>
                         <div class="menu-card">
@@ -47,12 +56,14 @@
                                 <h2 class="section-title">Soupe à l'oignon</h2>
                                 <p class="section-subtitle">Revisitée</p>
                             </div>
-                            <div class="menu-card-price">20€</div>
+                            <div class="menu-card-price-wrapper">
+                                <div class="menu-card-price">20€</div>
+                            </div>
                             <div class="animated-tick"></div>
                         </div>
                     </div>
                 </div>
-                <div class="sub-menu-wrapper">
+                <div class="submenu-wrapper">
                     <h3 class="section-subtitle">PLATS</h3>
                     <div class="menu-card-wrapper">
                         <div class="menu-card">
@@ -60,7 +71,9 @@
                                 <h2 class="section-title">Coquilles Saint-Jacques</h2>
                                 <p class="section-subtitle">Accompagnées d'une purée de panais</p>
                             </div>
-                            <div class="menu-card-price">40€</div>
+                            <div class="menu-card-price-wrapper">
+                                <div class="menu-card-price">40€</div>
+                            </div>
                             <div class="animated-tick"></div>
                         </div>
                         <div class="menu-card">
@@ -68,7 +81,9 @@
                                 <h2 class="section-title">Magret de canard</h2>
                                 <p class="section-subtitle">Et parmentier de pommes de terre</p>
                             </div>
-                            <div class="menu-card-price">35€</div>
+                            <div class="menu-card-price-wrapper">
+                                <div class="menu-card-price">35€</div>
+                            </div>
                             <div class="animated-tick"></div>
                         </div>
                         <div class="menu-card">
@@ -76,20 +91,24 @@
                                 <h2 class="section-title">Pigeonneau d'Ille-et-Vilaine</h2>
                                 <p class="section-subtitle">Sur son lit de gnocchis aux légumes</p>
                             </div>
-                            <div class="menu-card-price">44€</div>
+                            <div class="menu-card-price-wrapper">
+                                <div class="menu-card-price">44€</div>
+                            </div>
                             <div class="animated-tick"></div>
                         </div>
                     </div>
                 </div>
-                <div class="sub-menu-wrapper">
-                    <h3 class="section-subtitle">PLATS</h3>
+                <div class="submenu-wrapper">
+                    <h3 class="section-subtitle">DESSERTS</h3>
                     <div class="menu-card-wrapper">
                         <div class="menu-card">
                             <div class="menu-card-informations">
                                 <h2 class="section-title">Pétales de violettes glacés</h2>
                                 <p class="section-subtitle">Et purée de noisettes</p>
                             </div>
-                            <div class="menu-card-price">18€</div>
+                            <div class="menu-card-price-wrapper">
+                                <div class="menu-card-price">18€</div>
+                            </div>
                             <div class="animated-tick"></div>
                         </div>
                         <div class="menu-card">
@@ -97,7 +116,9 @@
                                 <h2 class="section-title">Fondant au chocolat</h2>
                                 <p class="section-subtitle">Revisité</p>
                             </div>
-                            <div class="menu-card-price">22€</div>
+                            <div class="menu-card-price-wrapper">
+                                <div class="menu-card-price">22€</div>
+                            </div>
                             <div class="animated-tick"></div>
                         </div>
                         <div class="menu-card">
@@ -105,13 +126,19 @@
                                 <h2 class="section-title">Millefeuille croustillant</h2>
                                 <p class="section-subtitle">Myrtilles et pâte d'amande</p>
                             </div>
-                            <div class="menu-card-price">23€</div>
+                            <div class="menu-card-price-wrapper">
+                                <div class="menu-card-price">23€</div>
+                            </div>
                             <div class="animated-tick"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="button">Commander</button>
+            <div class="button-wrapper">
+                <button class="button">
+                    <p class="steplist-text">Commander</p>
+                </button>
+            </div>
         </section>
     </main>
     <footer class="footer-wrapper">

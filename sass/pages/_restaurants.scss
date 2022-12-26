@@ -1,3 +1,87 @@
 .main-wrapper {
-    
+
+    .restaurant-image-wrapper {
+        display: flex;
+        height: 200px;
+
+        .restaurant-background-image {
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    .restaurant-menu-wrapper {
+        @include flex-column();
+        @include border-top();
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .menu-wrapper {
+            
+            .submenu-wrapper {
+
+                margin-bottom: 40px;
+                & > .section-subtitle {
+                    width: 40px;
+                    font-weight: 200;
+                    font-size: 16px;
+                    height: 20px;
+                    border-bottom: 2px solid $riptide;
+                }
+
+                .menu-card-wrapper {
+                    @include flex-column();
+                    row-gap: 15px;
+
+                    .menu-card {
+                        @include flex-row();
+                        @include boxshadow();
+                        @include card-border-radius();
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        justify-content: space-between;
+
+                        &:hover {
+
+                        }
+
+                        .menu-card-informations {
+                            @include flex-column();
+                            
+                            .section-title {
+                                font-size: 16px;
+                                margin-block-start: 10px;
+                                margin-block-end: 0px;
+                            }
+
+                            .section-subtitle {
+                                font-size: 14px;
+                                margin-block-start: 5px;
+                                margin-block-end: 10px;
+                            }
+                        }
+
+                        .menu-card-price-wrapper {
+                            display: flex;
+                            align-items: flex-end;
+                        }
+
+                        .animated-tick {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .button-wrapper {
+            display: flex;
+            justify-content: center;
+            .button {
+                padding-left: 40px;
+                padding-right: 40px;
+                margin-bottom: 40px;
+            }
+        }
+    }
 }

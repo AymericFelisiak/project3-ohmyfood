@@ -34,6 +34,13 @@
   font-size: 14px;
 }
 
+.menu-card-price {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-block-end: 10px;
+}
+
 .fa-solid.fa-mobile-screen-button, .fa-solid.fa-list, .fa-solid.fa-store {
   color: grey;
 }
@@ -64,14 +71,46 @@
   position: relative;
   box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.25);
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
-.header-wrapper .site-title-wrapper {
+.header-wrapper .title-wrapper {
   cursor: pointer;
+  text-align: center;
   text-decoration: none;
   color: black;
+  width: 100%;
 }
-.header-wrapper .site-title-wrapper:visited {
+.header-wrapper .title-wrapper:visited {
+  color: black;
+}
+
+.header-wrapper {
+  position: relative;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.header-wrapper .arrow-title-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 34px;
+}
+.header-wrapper .arrow-title-wrapper .arrow-wrapper {
+  display: flex;
+  text-decoration: none;
+}
+.header-wrapper .arrow-title-wrapper .arrow-wrapper:visited {
+  color: black;
+}
+.header-wrapper .arrow-title-wrapper .title-wrapper {
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+.header-wrapper .arrow-title-wrapper .title-wrapper:visited {
   color: black;
 }
 
@@ -126,6 +165,8 @@
   margin-block-end: 30px;
 }
 .main-wrapper .introduction-wrapper .button {
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 40px;
 }
 .main-wrapper .fonctionnement-wrapper {
@@ -236,6 +277,75 @@
 }
 .main-wrapper .restaurants-wrapper .main-card-wrapper .main-card .main-card-informations-wrapper .heart-icons-container:hover .fa-regular.fa-heart {
   display: none;
+}
+
+.main-wrapper .restaurant-image-wrapper {
+  display: flex;
+  height: 200px;
+}
+.main-wrapper .restaurant-image-wrapper .restaurant-background-image {
+  object-fit: cover;
+  width: 100%;
+}
+.main-wrapper .restaurant-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 20px 0px 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main-wrapper .restaurant-menu-wrapper .menu-wrapper .submenu-wrapper {
+  margin-bottom: 40px;
+}
+.main-wrapper .restaurant-menu-wrapper .menu-wrapper .submenu-wrapper > .section-subtitle {
+  width: 40px;
+  font-weight: 200;
+  font-size: 16px;
+  height: 20px;
+  border-bottom: 2px solid #99E2D0;
+}
+.main-wrapper .restaurant-menu-wrapper .menu-wrapper .submenu-wrapper .menu-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.main-wrapper .restaurant-menu-wrapper .menu-wrapper .submenu-wrapper .menu-card-wrapper .menu-card {
+  display: flex;
+  box-shadow: 4px 4px 22px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+}
+.main-wrapper .restaurant-menu-wrapper .menu-wrapper .submenu-wrapper .menu-card-wrapper .menu-card .menu-card-informations {
+  display: flex;
+  flex-direction: column;
+}
+.main-wrapper .restaurant-menu-wrapper .menu-wrapper .submenu-wrapper .menu-card-wrapper .menu-card .menu-card-informations .section-title {
+  font-size: 16px;
+  margin-block-start: 10px;
+  margin-block-end: 0px;
+}
+.main-wrapper .restaurant-menu-wrapper .menu-wrapper .submenu-wrapper .menu-card-wrapper .menu-card .menu-card-informations .section-subtitle {
+  font-size: 14px;
+  margin-block-start: 5px;
+  margin-block-end: 10px;
+}
+.main-wrapper .restaurant-menu-wrapper .menu-wrapper .submenu-wrapper .menu-card-wrapper .menu-card .menu-card-price-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+.main-wrapper .restaurant-menu-wrapper .menu-wrapper .submenu-wrapper .menu-card-wrapper .menu-card .animated-tick {
+  display: none;
+}
+.main-wrapper .restaurant-menu-wrapper .button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.main-wrapper .restaurant-menu-wrapper .button-wrapper .button {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 40px;
 }
 
 html {

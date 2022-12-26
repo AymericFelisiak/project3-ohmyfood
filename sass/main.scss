@@ -11,10 +11,12 @@
 
 // Layouts
 @import "layouts/header";
+@import "layouts/header-restaurants";
 @import "layouts/footer";
 
 // Pages
 @import "pages/index";
+@import "pages/restaurants";
 
 html {
     scroll-behavior: smooth;
