@@ -75,6 +75,14 @@
   color: #99E2D0;
 }
 
+.fa-solid.fa-arrow-left {
+  color: black;
+}
+
+.fa-solid.fa-heart {
+  color: #9356DC;
+}
+
 .button {
   border-radius: 20px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -214,7 +222,6 @@
   width: 100%;
   max-width: 330px;
   height: 70px;
-  background-color: #F7F7F7;
   align-items: center;
   column-gap: 20px;
   margin-bottom: 20px;
@@ -296,7 +303,6 @@
 }
 .main-wrapper .restaurants-wrapper .main-card-wrapper .main-card .main-card-informations-wrapper .heart-icons-container:hover .fa-solid.fa-heart {
   display: flex;
-  color: #9356DC;
 }
 .main-wrapper .restaurants-wrapper .main-card-wrapper .main-card .main-card-informations-wrapper .heart-icons-container:hover .fa-regular.fa-heart {
   display: none;
@@ -335,7 +341,6 @@
 }
 .main-wrapper .restaurant-menu-wrapper .restaurant-menu-top-wrapper .heart-icons-container:hover .fa-solid.fa-heart {
   display: flex;
-  color: #9356DC;
 }
 .main-wrapper .restaurant-menu-wrapper .restaurant-menu-top-wrapper .heart-icons-container:hover .fa-regular.fa-heart {
   display: none;
