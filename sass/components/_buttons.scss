@@ -3,7 +3,7 @@
     background: linear-gradient(to bottom right, $pale-magenta, $amethyst);
     border: 0;
     
-    .steplist-text {
+    &.steplist-text {
         color: white;
     }
 
