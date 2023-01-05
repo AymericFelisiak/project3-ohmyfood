@@ -1,3 +1,62 @@
+.loader-wrapper {
+    @include flex-column();
+    animation: show-loader 3s forwards;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    .loader-image-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .loader-logo {
+            width: 60%;
+            object-fit: fill;
+        }
+    }
+
+    .loader-animation-wrapper {
+        @include flex-row();
+        justify-content: center;
+        width: 100%;
+        height: 1.5vw;
+        max-height: 15px;
+        column-gap: 10px;
+        .rectangle {
+            width: 12%;
+            animation: loader-animation 1s infinite;
+
+            &:nth-child(1) {
+                background-color: $amethyst;
+            }
+    
+            &:nth-child(2) {
+                background-color: $pale-magenta;
+                animation-delay: 100ms;
+            }
+    
+            &:nth-child(3) {
+                background-color: $riptide;
+                animation-delay: 200ms;
+            }
+
+            &:nth-child(4) {
+                background-color: $pale-magenta;
+                animation-delay: 300ms;
+            }
+    
+            &:nth-child(5) {
+                background-color: $amethyst;
+                animation-delay: 400ms;
+            }
+        }
+    }
+}
+
 .main-wrapper {
 
     .position-wrapper {

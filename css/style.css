@@ -59,6 +59,25 @@
     rotate: 0deg;
   }
 }
+@keyframes loader-animation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes show-loader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
 .fa-solid.fa-mobile-screen-button, .fa-solid.fa-list, .fa-solid.fa-store {
   color: grey;
 }
@@ -121,6 +140,7 @@
 .header-wrapper .arrow-title-wrapper .arrow-wrapper {
   display: flex;
   text-decoration: none;
+  color: black;
 }
 .header-wrapper .arrow-title-wrapper .arrow-wrapper:visited {
   color: black;
@@ -159,6 +179,60 @@
 .footer-wrapper .footer-link .footer-text {
   margin-block-start: 5px;
   margin-block-end: 5px;
+}
+
+.loader-wrapper {
+  display: flex;
+  flex-direction: column;
+  animation: show-loader 3s forwards;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+}
+.loader-wrapper .loader-image-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.loader-wrapper .loader-image-wrapper .loader-logo {
+  width: 60%;
+  object-fit: fill;
+}
+.loader-wrapper .loader-animation-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 1.5vw;
+  max-height: 15px;
+  column-gap: 10px;
+}
+.loader-wrapper .loader-animation-wrapper .rectangle {
+  width: 12%;
+  animation: loader-animation 1s infinite;
+}
+.loader-wrapper .loader-animation-wrapper .rectangle:nth-child(1) {
+  background-color: #9356DC;
+}
+.loader-wrapper .loader-animation-wrapper .rectangle:nth-child(2) {
+  background-color: #FF79DA;
+  animation-delay: 100ms;
+}
+.loader-wrapper .loader-animation-wrapper .rectangle:nth-child(3) {
+  background-color: #99E2D0;
+  animation-delay: 200ms;
+}
+.loader-wrapper .loader-animation-wrapper .rectangle:nth-child(4) {
+  background-color: #FF79DA;
+  animation-delay: 300ms;
+}
+.loader-wrapper .loader-animation-wrapper .rectangle:nth-child(5) {
+  background-color: #9356DC;
+  animation-delay: 400ms;
 }
 
 .main-wrapper .position-wrapper {

@@ -13,6 +13,7 @@
         .arrow-wrapper {
             @include flex-row();
             text-decoration: none;
+            color: black;
     
             &:visited {
                 color: black;
