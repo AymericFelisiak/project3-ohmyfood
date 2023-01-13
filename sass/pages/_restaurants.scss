@@ -2,6 +2,7 @@
 
     .restaurant-image-wrapper {
         display: flex;
+        max-height: 400px;
 
         .restaurant-background-image {
             object-fit: cover;

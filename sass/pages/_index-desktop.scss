@@ -1,0 +1,72 @@
+// Pour les écrans de largeur 769px min
+@media screen and (min-width : 769px) {
+    .main-wrapper {
+        @include flex-row();
+        flex-wrap: wrap;
+
+        .position-wrapper {
+            width: 100%;
+        }
+
+        .introduction-wrapper {
+            justify-content: center;
+            width: 50%;
+        }
+
+        .fonctionnement-wrapper {
+            padding: 0;
+            margin: 0;
+            background-color: $white-smoke;
+            width: 50%;
+
+            .section-title {
+                text-align: center;
+            }
+        }
+
+        .restaurants-wrapper {
+            @include flex-column();
+            width: 100%;
+            background-color: white;
+
+            .section-title {
+                width: 100%;
+            }
+            
+            .main-card-wrapper {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                column-gap: 20px;
+
+                .main-card {
+                    width: 48%;
+                    max-width: 570px;
+                }
+            }
+        }
+    }
+}
+
+// Les 4 cartes menu en ligne pour très grands écrans
+@media screen and (min-width : 1790px) {
+    .main-wrapper {
+
+        .restaurants-wrapper {
+            @include flex-column();
+            width: 100%;
+            background-color: white;
+            
+            .main-card-wrapper {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                column-gap: 20px;
+
+                .main-card {
+                    width: 24%;
+                }
+            }
+        }
+    }
+}
