@@ -1,6 +1,6 @@
 // Pour les écrans de largeur 769px min
 @media screen and (min-width : 769px) {
-    .main-wrapper {
+    .main-wrapper-index {
         @include flex-row();
         flex-wrap: wrap;
 
@@ -50,7 +50,7 @@
 
 // Les 4 cartes menu en ligne pour très grands écrans
 @media screen and (min-width : 1790px) {
-    .main-wrapper {
+    .main-wrapper-index {
 
         .restaurants-wrapper {
             @include flex-column();

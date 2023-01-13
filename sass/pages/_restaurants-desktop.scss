@@ -1,3 +1,37 @@
-@media screen and (min-device-width : 769px) {
-    
+@media screen and (min-width : 769px) {
+    .main-wrapper-restaurant {
+        
+        .restaurant-menu-wrapper {
+
+            .menu-wrapper {
+                @include flex-row();
+                flex-wrap: wrap;
+                justify-content: center;
+                column-gap: 20px;
+
+                .submenu-wrapper {
+                    width: 48%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 1200px) {
+    .main-wrapper-restaurant {
+        
+        .restaurant-menu-wrapper {
+
+            .menu-wrapper {
+                @include flex-row();
+                flex-wrap: wrap;
+                justify-content: center;
+                column-gap: 20px;
+
+                .submenu-wrapper {
+                    width: 30%;
+                }
+            }
+        }
+    }
 }
