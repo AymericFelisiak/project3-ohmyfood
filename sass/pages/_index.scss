@@ -1,3 +1,4 @@
+// Loader style, in front of the content for 3 seconds
 .loader-wrapper {
     @include flex-column();
     animation: show-loader 3s forwards;
@@ -9,6 +10,7 @@
     align-items: center;
     justify-content: center;
     row-gap: 10px;
+
     .loader-image-wrapper {
         display: flex;
         justify-content: center;
@@ -19,6 +21,7 @@
         }
     }
 
+    // Wrapper for the equalizer animation
     .loader-animation-wrapper {
         @include flex-row();
         justify-content: center;
@@ -30,6 +33,7 @@
             width: 12%;
             animation: loader-animation 1s infinite;
 
+            // Adding delay and changing color for each child. Delay greater for the next
             &:nth-child(1) {
                 background-color: $amethyst;
             }
@@ -134,7 +138,8 @@
                         margin: 0;
                     }
                 }
-    
+                
+                // Change background and icon of 3 steplist on hover
                 &:hover {
                     background-color: $transparent-amethyst;
             
@@ -203,16 +208,19 @@
                     .heart-icons-container {
                         display: flex;
 
+                        // Hide purple heart by default
                         .fa-solid.fa-heart {
                             display: none;
                         }
 
                         &:hover {
 
+                            // Show purple heart on hover
                             .fa-solid.fa-heart {
                                 display: flex;
                             }
 
+                            // Hide regular heart on hover
                             .fa-regular.fa-heart {
                                 display: none;
                             }

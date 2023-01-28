@@ -1,3 +1,5 @@
+// Style for the 3 restaurants
+
 .main-wrapper-restaurant {
 
     .restaurant-image-wrapper {
@@ -27,31 +29,15 @@
             margin-top: 20px;
 
             .heart-icons-container {
-                display: flex;
                 margin-right: 20px;
-
-                .fa-solid.fa-heart {
-                    display: none;
-                }
-
-                &:hover {
-
-                    .fa-solid.fa-heart {
-                        display: flex;
-                    }
-
-                    .fa-regular.fa-heart {
-                        display: none;
-                    }
-                }
             }
-
         }
 
         .menu-wrapper {
             
             .submenu-wrapper {
                 margin-bottom: 40px;
+
                 & > .section-subtitle {
                     width: 40px;
                     font-weight: 200;
@@ -73,6 +59,8 @@
                         justify-content: space-between;
                         animation: card-fade-in 2s forwards;
                         
+                        // Applies a delay to every children, the delay gets time gets longer for each children
+                        // If the menu has 6 meals, need to add more classes
                         &:nth-child(2) {
                             animation-delay: 100ms;
                         }
@@ -85,12 +73,15 @@
                             animation-delay: 300ms;
                         }
 
+                        // Animation for the animated check
                         &:hover {
 
+                            // Grows the div from 0 to 50px when a menu item is hovered
                             .animated-check {
                                 width: 50px;
                             }
 
+                            // Rotation of the check inside the green rectangle
                             .fa-solid.fa-check {
                                 animation: tick-rotation 1s forwards;            
                             }
@@ -123,6 +114,7 @@
                             margin-left: auto;
                         }
 
+                        // Animation of the rectangle when hovering
                         .animated-check {
                             display: flex;
                             width: 0px;

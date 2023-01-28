@@ -1,3 +1,4 @@
+// Restaurant style for screens wider than 769px. Row of 2 and then 1 center under the 2
 @media screen and (min-width : 769px) {
     .main-wrapper-restaurant {
         
@@ -17,6 +18,7 @@
     }
 }
 
+// For 1200px screens, the 3 menus in row
 @media screen and (min-width : 1200px) {
     .main-wrapper-restaurant {
         

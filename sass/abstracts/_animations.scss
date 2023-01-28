@@ -1,3 +1,4 @@
+// Menu fade-in
 @keyframes card-fade-in {
     0% {
         opacity: 0;
@@ -10,6 +11,7 @@
     }
 }
 
+// Rotating tick
 @keyframes tick-rotation {
     0% {
         transform : rotate(180deg);
@@ -19,6 +21,7 @@
     }
 }
 
+// Main page loader equalizer animation
 @keyframes loader-animation {
     0% {
         transform: translateY(0px);
@@ -31,11 +34,33 @@
     }
 }
 
+// Shows loader animation and hides it at the end
 @keyframes show-loader {
     0% {
         visibility: visible;
     }
     100% {
         visibility: hidden;
+    }
+}
+
+// Hover animation for the hearts
+.heart-icons-container {
+    display: flex;
+
+    .fa-solid.fa-heart {
+        display: none;
+    }
+    
+    // Shows purple hurt when the heart is hovered
+    &:hover {
+
+        .fa-solid.fa-heart {
+            display: flex;
+        }
+
+        .fa-regular.fa-heart {
+            display: none;
+        }
     }
 }

@@ -78,6 +78,19 @@
     visibility: hidden;
   }
 }
+.heart-icons-container {
+  display: flex;
+}
+.heart-icons-container .fa-solid.fa-heart {
+  display: none;
+}
+.heart-icons-container:hover .fa-solid.fa-heart {
+  display: flex;
+}
+.heart-icons-container:hover .fa-regular.fa-heart {
+  display: none;
+}
+
 .fa-solid.fa-mobile-screen-button, .fa-solid.fa-list, .fa-solid.fa-store {
   color: grey;
 }
@@ -405,17 +418,7 @@
   margin-top: 20px;
 }
 .main-wrapper-restaurant .restaurant-menu-wrapper .restaurant-menu-top-wrapper .heart-icons-container {
-  display: flex;
   margin-right: 20px;
-}
-.main-wrapper-restaurant .restaurant-menu-wrapper .restaurant-menu-top-wrapper .heart-icons-container .fa-solid.fa-heart {
-  display: none;
-}
-.main-wrapper-restaurant .restaurant-menu-wrapper .restaurant-menu-top-wrapper .heart-icons-container:hover .fa-solid.fa-heart {
-  display: flex;
-}
-.main-wrapper-restaurant .restaurant-menu-wrapper .restaurant-menu-top-wrapper .heart-icons-container:hover .fa-regular.fa-heart {
-  display: none;
 }
 .main-wrapper-restaurant .restaurant-menu-wrapper .menu-wrapper .submenu-wrapper {
   margin-bottom: 40px;

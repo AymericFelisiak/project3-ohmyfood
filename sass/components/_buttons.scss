@@ -1,3 +1,4 @@
+// Style for every buttons
 .button {
     @include button-borders();
     background: linear-gradient(to bottom right, $pale-magenta, $amethyst);

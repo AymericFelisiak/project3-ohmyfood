@@ -1,4 +1,4 @@
-// Pour les écrans de largeur 769px min
+// For screen bigger than 769px
 @media screen and (min-width : 769px) {
     .main-wrapper-index {
         @include flex-row();
@@ -48,7 +48,7 @@
     }
 }
 
-// Les 4 cartes menu en ligne pour très grands écrans
+// 4 menu cards in row for bigger screens
 @media screen and (min-width : 1790px) {
     .main-wrapper-index {
 
