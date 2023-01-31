@@ -117,6 +117,7 @@
 
 .button {
   border-radius: 20px;
+  box-shadow: 4px 4px 22px -5px rgba(0, 0, 0, 0.3);
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border: 0;
 }
@@ -125,6 +126,7 @@
 }
 .button:hover {
   cursor: pointer;
+  box-shadow: 4px 4px 22px -5px rgba(0, 0, 0, 0.6);
   opacity: 0.8;
 }
 
@@ -300,7 +302,7 @@
 .main-wrapper-index .fonctionnement-wrapper .steplist-wrapper .steplist {
   display: flex;
   box-shadow: 4px 4px 22px -5px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: #F7F7F7;
   overflow: visible;
   width: 100%;

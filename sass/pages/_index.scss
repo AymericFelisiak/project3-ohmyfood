@@ -111,7 +111,7 @@
             .steplist {
                 @include flex-row();
                 @include boxshadow();
-                @include card-border-radius();
+                @include list-border-radius();
                 background-color: $white-smoke;
                 overflow: visible;
                 width: 100%;

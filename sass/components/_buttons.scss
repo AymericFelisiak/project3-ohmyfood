@@ -1,6 +1,7 @@
 // Style for every buttons
 .button {
     @include button-borders();
+    @include boxshadow();
     background: linear-gradient(to bottom right, $pale-magenta, $amethyst);
     border: 0;
     
@@ -10,6 +11,7 @@
 
     &:hover {
         cursor: pointer;
+        box-shadow: 4px 4px 22px -5px rgba(0, 0, 0, 0.60);
         opacity: 0.8;
     }
 }
