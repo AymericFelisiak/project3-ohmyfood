@@ -379,18 +379,6 @@
   margin-block-start: 5px;
   margin-block-end: 15px;
 }
-.main-wrapper-index .restaurants-wrapper .main-card-wrapper .main-card .main-card-informations-wrapper .heart-icons-container {
-  display: flex;
-}
-.main-wrapper-index .restaurants-wrapper .main-card-wrapper .main-card .main-card-informations-wrapper .heart-icons-container .fa-solid.fa-heart {
-  display: none;
-}
-.main-wrapper-index .restaurants-wrapper .main-card-wrapper .main-card .main-card-informations-wrapper .heart-icons-container:hover .fa-solid.fa-heart {
-  display: flex;
-}
-.main-wrapper-index .restaurants-wrapper .main-card-wrapper .main-card .main-card-informations-wrapper .heart-icons-container:hover .fa-regular.fa-heart {
-  display: none;
-}
 
 .main-wrapper-restaurant .restaurant-image-wrapper {
   display: flex;

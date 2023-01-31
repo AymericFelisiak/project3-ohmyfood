@@ -204,28 +204,6 @@
                             margin-block-end: 15px;
                         }
                     }
-
-                    .heart-icons-container {
-                        display: flex;
-
-                        // Hide purple heart by default
-                        .fa-solid.fa-heart {
-                            display: none;
-                        }
-
-                        &:hover {
-
-                            // Show purple heart on hover
-                            .fa-solid.fa-heart {
-                                display: flex;
-                            }
-
-                            // Hide regular heart on hover
-                            .fa-regular.fa-heart {
-                                display: none;
-                            }
-                        }
-                    }
                 }
             }
         }
